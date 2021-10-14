@@ -1,0 +1,13 @@
+#calculator-display {
+  background-color: gray;
+  color: white;
+  font-size: xx-large;
+  text-align: right;
+  padding: 0.1rem;
+  box-shadow: inset -1px 1px 0 #d15407, inset -2px 2px 0 #d15407,
+    inset -3px 3px 0 #d15407, inset -4px 4px 0 #d15407, inset -5px 5px 0 #d15407;
+
+  #display-text {
+    padding-right: 1rem;
+  }
+}

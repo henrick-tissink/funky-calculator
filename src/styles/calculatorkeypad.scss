@@ -1,0 +1,14 @@
+#calculator-keypad {
+  margin-top: 1rem;
+
+  .mantine-button-root {
+    border-radius: 2rem;
+    box-shadow: -1px 1px 0 #d15407, -2px 2px 0 #d15407, -3px 3px 0 #d15407,
+      -4px 4px 0 #d15407, -5px 5px 0 #d15407, -6px 6px 0 #d15407;
+  }
+
+  .mantine-button-label {
+    width: 1.5rem;
+    justify-content: center;
+  }
+}

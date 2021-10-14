@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { StrictMode } from 'react';
+import { render } from 'react-dom';
+import Calculator from './components/Calculator'
+import { MantineProvider, Center } from '@mantine/core';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Center>
+        <Calculator />
+      </Center>
     </div>
   );
 }
 
-export default App;
+render(
+  <MantineProvider theme={{ colorScheme: 'dark' }}>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </MantineProvider>,
+  document.getElementById("root")
+);
